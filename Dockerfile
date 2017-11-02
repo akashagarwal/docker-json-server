@@ -6,6 +6,5 @@ RUN npm install -g json-server
 
 EXPOSE 80
 ADD run.sh /run.sh
-ADD db.json /data/db.json
-ENTRYPOINT ["bash", "/run.sh"]
+ENTRYPOINT ["json-server", "-p","80","/data/db.json"]
 CMD []

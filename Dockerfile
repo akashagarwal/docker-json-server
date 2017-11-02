@@ -8,5 +8,6 @@ VOLUME /data
 
 EXPOSE 80
 ADD run.sh /run.sh
+ADD db.json /data/db.json
 ENTRYPOINT ["bash", "/run.sh"]
 CMD []
